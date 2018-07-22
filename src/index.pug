@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        title= 'Site-resume'
+    body
+        include elem/logo/logo
+        include elem/profile/profile
+        include elem/contact/contact
+        include elem/skills/skills
+        include elem/education/education
+        include elem/experience/experience
+        include elem/software/software
+        .first-coll
+            +logo('NAME HERE', 'SURNAME', 'GRAPHIC DESINGER')
+            +profile()
+            +contact()
+            +skills()
+        .second-coll
+            +education()
+            +experience()
+            +software()

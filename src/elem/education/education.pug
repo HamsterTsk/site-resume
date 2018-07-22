@@ -1,0 +1,19 @@
+mixin education()
+    .education
+        img(src=require('./elem/education/img/education.png'))
+        .education__head
+            span EDUCATION
+        .education__content
+            -for(var x = 0; x < 4; x++)
+                table
+                    tr
+                        td
+                            svg
+                                circle(r='10' cx='50%' cy='30' fill='black')
+                        td
+                            span.education__content_head MASTER DEGREE
+                            time // Feb 2011 - Jun 2014
+                            br
+                            span.education__content_univ UNIVERSITY NAME
+                            br
+                            span.education__content_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, delectus vel est accusantium sapiente. Sed magnam vitae eum voluptas modi. Illo esse, veniam, velit officiis aliquam maiores reiciendis labore non quod! Iure, eius!

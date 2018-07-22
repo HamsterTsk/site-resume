@@ -1,0 +1,32 @@
+mixin software()
+    -var firstcoll = ['photoshop', 'illustrator', 'indesign']
+    -var secondcoll = ['dreamweaver', 'aftereffects', 'htmlcss']
+    .software
+        img(src=require('./elem/software/img/Software.png'))
+        .software__head
+            span SOFTWARE
+        .software__content
+            .software__content_firstcoll
+                each item in firstcoll
+                    table(class='software__'+item)
+                        caption=item
+                        tr
+                            td
+                                svg
+                                    rect(class='software__firstrect software__firstrect_' + item)
+                                    rect(class='software__secondrect software__secondrect_' + item)
+            .software__content_secondcoll
+                each cl in secondcoll
+                    table(class='software__'+cl)
+                        case cl
+                            when cl='aftereffects'
+                                caption AFTER EFFECTS
+                            when cl='htmlcss'
+                                caption HTML&amp;CSS3
+                            when cl='dreamweaver'
+                                caption DREAMWEAVER
+                        tr
+                            td
+                                svg
+                                    rect(class='software__firstrect software__firstrect_'+cl)
+                                    rect(class='software__secondrect software__secondrect_'+cl)

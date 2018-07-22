@@ -1,0 +1,15 @@
+mixin skills()
+    -var caption = ['CREATIVE', 'TEAMWORK', 'INNOVATE', 'COMMUNICATION']
+    .skills
+        img(src=require('./elem/skills/img/Skills.png'))
+        .skills__head
+            span SKILLS
+        .skills__content
+            each item in caption
+                table
+                    caption=item
+                    tr
+                        -for (var x = 0; x < 12; x++)
+                            td
+                                svg
+                                    circle(r='9' cx='50%' cy='50%' fill='#3d6cb0')

@@ -1,0 +1,1 @@
+const css = require('./profile.styl');
