@@ -14,18 +14,16 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
-  width: 1280px;
-  height: 1811px;
-  margin: 0 auto;
-}
-.first-coll {
-  width: 521px;
-  height: 1811px;
-  float: left;
-}
-.second-coll {
-  width: 600px;
-  height: 1811px;
-  float: left;
-}
+.wrapp
+  display flex
+  max-width 1280px
+  justify-content center
+  margin 0 auto
+.first-coll
+  width 521px
+.second-coll
+  width 670px
+@media screen and (max-width: 1155px)
+  .wrapp
+    flex-direction column
+    align-items center

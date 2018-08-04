@@ -10,12 +10,13 @@ html(lang="en")
         include elem/education/education
         include elem/experience/experience
         include elem/software/software
-        .first-coll
-            +logo('NAME HERE', 'SURNAME', 'GRAPHIC DESINGER')
-            +profile()
-            +contact()
-            +skills()
-        .second-coll
-            +education()
-            +experience()
-            +software()
+        .wrapp
+            .first-coll
+                +logo('NAME HERE', 'SURNAME', 'GRAPHIC DESINGER')
+                +profile()
+                +contact()
+                +skills()
+            .second-coll
+                +education()
+                +experience()
+                +software()
